@@ -39,6 +39,19 @@ echo $i ;
 
 }
 
+//burası yeni bir fonksiyon
+
+function isPrime($n){
+for($x=2; $x<$n; $x++)
+   {
+      if($n %$x ==0)
+	      {
+		   return 0;
+		  }
+    }
+  return 1;
+   }
+}
 
 //Asal sayı işlemlerini gpm_nextprime() ile de yapabilirsiniz. O biraz daha kısa sanki ama bencmarklarla kapıştırmak gerekli :) 
 
