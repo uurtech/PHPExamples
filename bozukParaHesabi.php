@@ -19,5 +19,7 @@ if(($alinanUcret - $ucret) < 0){
 $paraUstu = $alinanUcret - $ucret;
 
 echo $paraUstu;
-
+echo "\n";
+echo $paraUstu % 10;
+echo "\n";
 ?>
