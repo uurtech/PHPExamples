@@ -1,0 +1,8 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^site.com[nc]
+RewriteRule ^(.*)$ http://www.site.com/$1 [r=301,nc]
+ 
+//301 Redirect Entire Directory
+RedirectMatch 301 site.com/a/b/c(.*) site.com/b/c/$1
