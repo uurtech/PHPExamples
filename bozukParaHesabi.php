@@ -1,7 +1,7 @@
 <?php
 
 //ödenecek hesap random verilecek (float/double şeklinde)
-$ucret = rand(100,1000) / 10;
+$ucret = 50;//rand(100,1000) / 10;
 
 //100 ile 1000 arasında bir sayı alıp 10'a bölüyoruz ki, 150.7 gibi bir rakam gelebilsin.
 //100 ile 1000 arasında bir rakam veri 100'e bölersek 15.07 gibi bir rakam alırız.
@@ -18,8 +18,11 @@ if(($alinanUcret - $ucret) < 0){
 
 $paraUstu = $alinanUcret - $ucret;
 
+$toplam_para_ustu = $paraUstu;
+
+$tam_liralar = $paraUstu % 10;
+
 echo $paraUstu;
 echo "\n";
-echo $paraUstu % 10;
-echo "\n";
+echo $tam_liralar;
 ?>
