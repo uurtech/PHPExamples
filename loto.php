@@ -14,6 +14,7 @@ do{
 	}
 }while($devam);
 
-print_r($sayilar);
+$s = &$sayilar;
+var_dump($s);
 
 ?>
